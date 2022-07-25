@@ -1,74 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../recursos/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
+
 <body>
-        <header class="header">
-            <a class="header__logo" href="../index.html"><img class="header__logo" src="../Recursos/logonaranja.png" alt=""></a>
-            <a href="https://app.logemp.com/"><button class="header__btn">Accede a la <br> <strong>APP</strong> </button></a>
-            <ul class="header__ul">
-                <!-- <li class="header__ul__li" ><a href="paginas\quienes_somos.html">Quienes Somos</a></li> 
-                <li class="header__ul__li"><a href="paginas\como_funciona.html">Cómo funciona</a></li>  -->
-                <li class="header__ul__li"><a href="../index.html">Home</a></li> 
-                <li class="header__ul__li"><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li> 
-            </ul>
-            <div class="menuHamburguesa"><i class="fa-solid fa-bars"></i></div>
-        </header>
-        <div class="contacto">
-            <article id="contacto">
-            <h3>Contactanos</h3>        
-            <form>
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                    <label for="nombre">Nombre:</label>	
-                    <input type="text" name="nombre"required="" placeholder="Ingresa tu nombre"/><br>
-                    <label for="email">Email:</label>	
-                    <input type="email" name="email" required="" placeholder="Ingresa tu Email *****@*****"/><br>
-                    <label for="tel">Teléfono:</label>	
-                    <input type="tel" name="teléfono" required="" placeholder="Ingresa tu teléfono"/><br>
-                    <label for="comentario">Comentario:</label><br>
-                    <textarea name="comentario" id="" cols="35" rows="10" placeholder="Ingresa tus comentarios o consultas"></textarea><br>
-                    <input class="contacto__btn" type="submit"value="Enviar Formulario"/>
-                    <input class="contacto__btn" type="reset"value="Borrar Formulario"/><br>
-                </fieldset>
-            </form>
-            </article>
-            <article id="nuevoUsuario">
-            <h3>¿Querés que te generemos un Usuario?</h3>        
-            <form>
-                <fieldset>
-                    <legend>Solicitud de Usuario</legend>
-                    <label for="solicitud_usuario" aria-checked="true">Quiero un usuario</label>
-                    <input type="checkbox" name="solicitud_usuario"value="1"checked> <br>
-                    <label for="nombre">Nombre:</label>	
-                    <input type="text" name="nombre"required="" placeholder="Ingresa tu nombre"/><br>
-                    <label for="email">Email:</label>	
-                    <input type="email" name="email" required="" placeholder="Ingresa tu Email *****@*****"/><br>
-                    <label for="tel">Teléfono:</label>	
-                    <input type="tel" name="teléfono" required="" placeholder="Ingresa tu teléfono"/><br>
-                    <label for="comentario">Comentario:</label><br>
-                    <textarea name="comentario" id="" cols="35" rows="8" placeholder="Ingresa tus comentarios o consultas"></textarea><br>
-                    <input class="contacto__btn" type="submit"value="Enviar Formulario"/>
-                    <input class="contacto__btn"type="reset"value="Borrar Formulario"/><br>
-                </fieldset>
-            </form>
-            </article>
-            <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+    <nav class="navbar navbar-secondary bg-secondary fixed-top">
+        <div class=" row col-5 col-sm-4 col-md-3 col-lg-2">
+            <a href="../index.html"><img src="../recursos/logonaranja.png" class="img-fluid" alt="Logo"></a>
         </div>
+        <a href="https://app.logemp.com/"><button tipe="button" class="btn btn-warning nav__btn">Ingresa a la
+                <strong>APP</strong>
+            </button></a>
+        <div>
+            <span class="nav__textobtn">Menú</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-secondary" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasSecondaryNavbarLabel">Menú</h3>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/quienes_somos.html">Quienes
+                                Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/como_funciona.html">Como
+                                Funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../paginas/preguntas_frecuentes.html">Preguntas
+                                Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="contacto">
+
+        <div class="container contacto__formularioContacto">
+
+            <h2 class="contacto__formularioContacto__titulo">CONTACTANOS</h2>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                <label for="floatingInput">Nombre</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo electrónico</label>
+            </div>
+            <div class="form-floating">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="1131133333">
+                <label for="floatingInput">Teléfono</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentarios</label>
+                <div >
+                <button type="submit" class="btn btn-warning contacto__formularioContacto__btn">Enviar</button>
+                <button type="reset" class="btn btn-warning contacto__formularioContacto__btn">Borrar</button>
+            </div>
+            </div>
+
+
+
+        </div>
+
+        <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+
         <footer class="footer">
-            <h6 class="footer__textos">Copyright 2018 <br> Todos los derechos reservados</h6>
-            <a class="footer__btn" href="contacto.html"><button>Comencemos</button></a>
-            <h6 class="footer__textos">Estamos en contacto</h6>
-            <a class="logos" href="https://www.instagram.com/logemp2.0/"><i class="fa-brands fa-instagram"></i></a>
-            <a class="logos" href="https://api.whatsapp.com/send?phone=+5491166173189"><i class="fa-brands fa-whatsapp"></i></a>
+            <p class="footer__textos">Copyright 2018 <br> Todos los derechos reservados</p>
+            <a class="footer__btn" href="Paginas/contacto.html"><button>Comencemos</button></a>
+            <div>
+                <p class="footer__textos">Estamos en contacto</p>
+                <a class="logos" href="https://www.instagram.com/logemp2.0/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="logos" href="https://api.whatsapp.com/send?phone=+5491166173189"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
         </footer>
 
+        <script src="../js/bootstrap.js"></script>
 </body>
+
 </html>
