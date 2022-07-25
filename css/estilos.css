@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,500&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+
+@media only screen and (min-width: 0px) {
+
+    .navbar {
+        background-color: rgba(89, 83, 83, 0.90) !important;
+        --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.491);
+        --bs-navbar-toggler-font-size: 1rem;
+        --bs-navbar-toggler-padding-y: 0.5rem;
+        --bs-navbar-toggler-focus-width: 0rem;
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .nav__btn {
+        width: 90%;
+        font-size: x-small;
+        color: white;
+        background-color: #ffa600e1;
+        margin: 5px;
+    }
+
+    .nav__textobtn {
+        display: none;
+    }
+
+    .nav-link {
+        color: #ffa600 !important;
+        font-size: large;
+    }
+
+    .pagina1 {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: right;
+        color: #fff;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../Recursos/imagenfondo.jpg);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        animation-name: aparicionImagenFondo;
+        animation-duration: 2s;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    @keyframes aparicionImagenFondo {
+        from {
+            opacity: 0.5;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .pagina1__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 30px;
+        margin-top: 100px;
+        border: solid;
+        border-radius: 20px;
+    }
+
+    .pagina1__h1 {
+        line-height: 1.5em;
+        text-align: center;
+        color: #ffa600;
+    }
+
+    .pagina1__p {
+        line-height: 2em;
+        text-align: center;
+    }
+
+    .pagina1__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40vh;
+    }
+
+    .actbtn {
+        border-radius: 10px;
+        border: solid 3px whitesmoke;
+        background-color: #ffa600;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    .nuestroServicio {
+        min-height: 90vh;
+        background-image: url(../Recursos/fondoNuestroServicio.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .nuestroServicio h2 {
+        padding-top: 20px;
+        font-weight: bolder;
+        color: rgba(89, 83, 83, 0.90);
+    }
+
+    .nuestroServicio h4 {
+        padding: 30px;
+        background-color: rgba(89, 83, 83, 0.90);
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .card {
+        margin: 20px;
+        text-align: center;
+        color: #ffffff;
+        background-color: rgba(89, 83, 83, 0.90) !important;
+    }
+
+    .nuestroServicio .card img {
+        margin-top: 10px;
+        filter: grayscale(1);
+    }
+
+    .card p span {
+        color: #ffa600;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+
+    .logoWTPflotante {
+        color: #ffa600;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        line-height: 50px;
+        bottom: 70px;
+        right: 40px;
+        background: #ffffffdc;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .logoWTPflotante:hover {
+        color: #ffffff;
+        background: #ffa60099;
+        transform: scale(1.1);
+        transition: 0.8s;
+    }
+
+    .footer {
+        height: 20%;
+        background-color: rgba(89, 83, 83, 0.90);
+        color: #ffffff;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        font-size: x-small;
+        padding: 10px 10px;
+    }
+
+    .footer__btn button {
+        border-radius: 10px;
+        border: solid 2px whitesmoke;
+        background-color: #ffa600;
+        color: #ffffff;
+        cursor: pointer;
+
+    }
+
+    .logos {
+        color: #ffa600;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .logos:hover {
+        color: #fff;
+    }
+
+    /* Quienes Somos */
+    .quienesSomos {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: bottom;
+        background-image: url(../recursos/ruta.jpg);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .quienesSomos__h2 {
+        color: #ffa600;
+        font-size: 2em;
+        background-color: #ffffffc0;
+        width: 90%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .quienesSomos__p {
+        color: #fff;
+        font-size: 0.8em;
+        padding: 0 30px;
+        text-align: center;
+        background-color: rgba(80, 80, 80, 0.712);
+        width: 90%;
+        border-radius: 5px;
+    }
+
+    .porQueElegirnos {
+        width: 100%;
+        min-height: 90vh;
+        background-size: cover;
+        background-image: url(../recursos/fondoNuestroServicio.svg);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .porQueElegirnos__h2 {
+        color: #ffa600;
+        font-size: 2em;
+        background-color: #ffffffc0;
+        width: 90%;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    /* PREGUNTAS FRECUENTES */
+    .preguntasFrecuentes {
+        width: 90%;
+        margin-top: 120px;
+        margin-bottom: 20px;
+
+    }
+
+    .preguntasFrecuentes__titulo {
+        text-align: center;
+        color: #ffa600;
+        font-size: 2em;
+        background-color: #8a8888c0;
+        width: 100%;
+        border-radius: 5px;
+
+    }
+
+    .preguntasFrecuentes h4 {
+        padding: 10px;
+        background-image: linear-gradient(to right, rgba(89, 83, 83, 0.90), #fff);
+        color: #ffa600;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+
+    .nav__btn {
+        font-size: medium;
+    }
+
+    .pagina1__h1 {
+        font-size: 2em;
+    }
+
+    .pagina1__p {
+        font-size: 1em;
+    }
+
+    .actbtn {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        font-size: medium;
+        padding: 10px 10px;
+    }
+
+    .logos {
+        color: #ffa600;
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    /* Quienes Somos */
+
+    .quienesSomos__p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .nav__textobtn {
+        display: inline;
+        color: #fff;
+        font-size: x-large;
+        padding-right: 15px;
+    }
+
+    .pagina1__right {
+        width: 50%;
+        margin-top: 0%;
+    }
+
+    .pagina1__h1 {
+        font-size: 2em;
+    }
+
+    .pagina1__p {
+        font-size: 1em;
+    }
+
+    .actbtn {
+        font-size: 1.5em;
+    }
+
+    /* Quienes Somos */
+
+    .quienesSomos__p {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        --bs-navbar-toggler-font-size: 1.5rem;
+    }
+
+    .pagina1__right {
+        width: 50%;
+    }
+
+    .pagina1__h1 {
+        font-size: 3em;
+    }
+
+    .pagina1__p {
+        font-size: 1.5em;
+    }
+
+    .pagina1__btn {
+        width: 40%;
+    }
+
+    .actbtn {
+        font-size: 2em;
+    }
+
+    .logoWTPflotante {
+        width: 80px;
+        height: 80px;
+        z-index: 100;
+        line-height: 80px;
+        font-size: 50px;
+    }
+
+}

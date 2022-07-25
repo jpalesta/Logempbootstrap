@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Contacto</title>
+</head>
+<body>
+        <header class="header">
+            <a class="header__logo" href="../index.html"><img class="header__logo" src="../Recursos/logonaranja.png" alt=""></a>
+            <a href="https://app.logemp.com/"><button class="header__btn">Accede a la <br> <strong>APP</strong> </button></a>
+            <ul class="header__ul">
+                <!-- <li class="header__ul__li" ><a href="paginas\quienes_somos.html">Quienes Somos</a></li> 
+                <li class="header__ul__li"><a href="paginas\como_funciona.html">Cómo funciona</a></li>  -->
+                <li class="header__ul__li"><a href="../index.html">Home</a></li> 
+                <li class="header__ul__li"><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li> 
+            </ul>
+            <div class="menuHamburguesa"><i class="fa-solid fa-bars"></i></div>
+        </header>
+        <div class="contacto">
+            <article id="contacto">
+            <h3>Contactanos</h3>        
+            <form>
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <label for="nombre">Nombre:</label>	
+                    <input type="text" name="nombre"required="" placeholder="Ingresa tu nombre"/><br>
+                    <label for="email">Email:</label>	
+                    <input type="email" name="email" required="" placeholder="Ingresa tu Email *****@*****"/><br>
+                    <label for="tel">Teléfono:</label>	
+                    <input type="tel" name="teléfono" required="" placeholder="Ingresa tu teléfono"/><br>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea name="comentario" id="" cols="35" rows="10" placeholder="Ingresa tus comentarios o consultas"></textarea><br>
+                    <input class="contacto__btn" type="submit"value="Enviar Formulario"/>
+                    <input class="contacto__btn" type="reset"value="Borrar Formulario"/><br>
+                </fieldset>
+            </form>
+            </article>
+            <article id="nuevoUsuario">
+            <h3>¿Querés que te generemos un Usuario?</h3>        
+            <form>
+                <fieldset>
+                    <legend>Solicitud de Usuario</legend>
+                    <label for="solicitud_usuario" aria-checked="true">Quiero un usuario</label>
+                    <input type="checkbox" name="solicitud_usuario"value="1"checked> <br>
+                    <label for="nombre">Nombre:</label>	
+                    <input type="text" name="nombre"required="" placeholder="Ingresa tu nombre"/><br>
+                    <label for="email">Email:</label>	
+                    <input type="email" name="email" required="" placeholder="Ingresa tu Email *****@*****"/><br>
+                    <label for="tel">Teléfono:</label>	
+                    <input type="tel" name="teléfono" required="" placeholder="Ingresa tu teléfono"/><br>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea name="comentario" id="" cols="35" rows="8" placeholder="Ingresa tus comentarios o consultas"></textarea><br>
+                    <input class="contacto__btn" type="submit"value="Enviar Formulario"/>
+                    <input class="contacto__btn"type="reset"value="Borrar Formulario"/><br>
+                </fieldset>
+            </form>
+            </article>
+            <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+        </div>
+        <footer class="footer">
+            <h6 class="footer__textos">Copyright 2018 <br> Todos los derechos reservados</h6>
+            <a class="footer__btn" href="contacto.html"><button>Comencemos</button></a>
+            <h6 class="footer__textos">Estamos en contacto</h6>
+            <a class="logos" href="https://www.instagram.com/logemp2.0/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="logos" href="https://api.whatsapp.com/send?phone=+5491166173189"><i class="fa-brands fa-whatsapp"></i></a>
+        </footer>
+
+</body>
+</html>

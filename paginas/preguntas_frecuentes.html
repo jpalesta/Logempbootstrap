@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Recursos/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Preguntas Frecuentes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-secondary bg-secondary fixed-top">
+        <div class=" row col-5 col-sm-4 col-md-3 col-lg-2">
+            <a href="../index.html"><img src="../recursos/logonaranja.png" class="img-fluid" alt="Logo"></a>
+        </div>
+        <a href="https://app.logemp.com/"><button tipe="button" class="btn btn-warning nav__btn">Ingresa a la
+                <strong>APP</strong>
+            </button></a>
+        <div>
+            <span class="nav__textobtn">Menú</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-secondary" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasSecondaryNavbarLabel">Menú</h3>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/quienes_somos.html">Quienes
+                                Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/como_funciona.html">Como
+                                Funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../paginas/preguntas_frecuentes.html">Preguntas
+                                Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <article class="container-fluid preguntasFrecuentes">
+
+        <h2 class="preguntasFrecuentes__titulo">Preguntas Frecuentes</h2>
+
+
+
+        <h4>Alta en la plataforma y uso</h4>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿El uso de la página tiene costo?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El uso de la página no tiene costo, lo único que vamos a cobrarte son los envíos que realices, y
+                        cuyo
+                        costo podés consultar permanentemente en tu perfil.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo me doy de alta?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Para darte de alta contactanos, te vamos a enviar un formulario para completar el cual
+                        envías vía mail y te damos de alta en el día.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cuáles son los posibles puntos de carga?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Los puntos de carga son ilimitados, nos enviás los datos, los cargamos y listo!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Cómo se determina el costo?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El costo del envío surge de la combinación de volumen y kilómetros recorridos, a eso pueden
+                        sumarse adicionales como la entrega en edificio por escalera.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Cómo coloco las dimensiones del producto?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Este es un punto importante ya que las unidades destinadas al retiro se determinan por las
+                        dimensiones de la carga y queremos evitar enviar vehículos con capacidad insuficiente, por ello
+                        siempre se
+                        deben tomar las dimensiones máximas del bulto, si por ejemplo tenés que transportar una silla,
+                        la
+                        altura estará determinada por el respaldo, si las sillas a trasladar son más de una, por ejemplo
+                        seis,
+                        y pensás armar bultos de dos sillas cada uno, podés ingresar tres unidades con las dimensiones
+                        del bulto
+                        conformado por dos sillas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Cómo coloco más de un producto?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El cotizador te permite colocar la cantidad de productos que necesitas y calcula el costo en
+                        función del volumen total.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Cómo le cobro a mi cliente?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Tenés dos posibilidades de cobro: 1. Lo cobrás vos: Lo sumás al costo del producto y lo cobrás
+                        en el momento. 2. Lo cobramos nosotros: al dar de alta una entrega nos aclararás que el cobro es
+                        a
+                        cargo nuestro y listo, cuando nos contactamos con el cliente le generamos el pago en Mercado
+                        Pago y
+                        cuando el cliente lo cancela, coordinamos la entrega.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Pueden traer mercadería a mi local?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Por supuesto, solo tenés que colocar como origen el código postal del lugar de retiro y como
+                        destino tu local, además tenés la posibilidad de agregar información adicional para que podamos
+                        coordinarlo.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Entrega</h4>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                        ¿En qué zona realizan las entregas?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Por el momento las entregas solo se realizan en CABA y GBA. Si tenés que enviar mercadería al
+                        interior del país podés indicar el código postal del expreso y lo llevamos, es importante
+                        aclarar que
+                        para estas entregas todos los bultos deben ir correctamente embalados e identificados para
+                        facilitar el
+                        control del personal de recepción del expreso.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        ¿La mercadería requiere algún tipo de embalaje?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El embalaje depende del tipo de producto, si son objetos duros no requieren embalaje adicional,
+                        en cuanto a sillones, sillas u otros productos con tela se deben embalar para evitar su
+                        deterioro durante el traslado y entrega.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingtwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                        ¿Debo identificar la mercadería a despachar?
+                    </button>
+                </h2>
+                <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingtwelve"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La mercadería debe ir identificada con el número de entrega que te damos y la aclaración de
+                        número de bultos / bultos totales
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading13">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        ¿Cómo se manejan los envíos a edificios?
+                    </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Para los envíos a edificios se envía un acompañante de manera de dejar el producto dentro del
+                        domicilio, en caso de que este no quepa en el ascensor, se puede subir hasta tres pisos por
+                        escalera con un costo adicional. Cabe aclarar que la responsabilidad de que el producto ingrese
+                        en el ascensor es del cliente y si al llegar al domicilio no entra en el ascensor, el producto
+                        se dejará en planta baja en el lugar que el cliente disponga.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading14">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                        ¿Cómo puedo consultar en que estado se encuentra mi pedido?
+                    </button>
+                </h2>
+                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Desde tu perfil podés consultar el estado de tu pedido en todo momento, además tenés filtros
+                        para poder
+                        ver todos los pedidos que, por ejemplo, están coordinados para retiro.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading15">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                        ¿Cómo se cuándo retiran el producto de mi negocio / almacén?
+                    </button>
+                </h2>
+                <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Ni bien coordinamos la entrega con el cliente te informamos vía mail la fecha de retiro, esta
+                        fecha debes confirmarla para que la pongamos en el ruteo del día.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading16">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        ¿Qué ocurre si el destinatario no se encuentra en su domicilio al arribar?
+                    </button>
+                </h2>
+                <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El mismo día de la entrega se realiza un contacto con el cliente para confirmar que pueda
+                        recibirlo, si aún así no se efectiviza la entrega se coordina una segunda fecha, si esta también
+                        es fallida, el cliente deberá abonar el flete 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Facturación</h4>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading17">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+                        ¿Cómo me cobran?
+                    </button>
+                </h2>
+                <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La facturación se realiza quincenalmente, con condición de pago 7 días fecha de factura, esta
+                        puede cancelarse de en efectivo, cheque, transferencia o Mercado Pago.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading18">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                        ¿Puedo saber el valor de la próxima factura?
+                    </button>
+                </h2>
+                <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Desde tu perfil podés saber cual será el monto de la próxima factura en todo momento, solo tenés
+                        que filtrar las entregas pendientes de facturación.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+
+    <footer class="footer">
+        <p class="footer__textos">Copyright 2018 <br> Todos los derechos reservados</p>
+        <a class="footer__btn" href="Paginas/contacto.html"><button>Comencemos</button></a>
+        <div>
+            <p class="footer__textos">Estamos en contacto</p>
+            <a class="logos" href="https://www.instagram.com/logemp2.0/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="logos" href="https://api.whatsapp.com/send?phone=+5491166173189"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

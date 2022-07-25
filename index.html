@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./recursos/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Logemp Inicio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-secondary bg-secondary fixed-top">
+    <div class=" row col-5 col-sm-4 col-md-3 col-lg-2">
+      <a href="./index.html"><img src="./recursos/logonaranja.png" class="img-fluid" alt="Logo"></a>
+    </div>
+    <a href="https://app.logemp.com/"><button tipe="button" class="btn btn-warning nav__btn">Ingresa a la
+        <strong>APP</strong>
+      </button></a>
+    <div>
+      <span class="nav__textobtn">Menú</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-secondary" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasSecondaryNavbarLabel">Menú</h3>
+          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./paginas/quienes_somos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./paginas/como_funciona.html">Como Funciona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./paginas/preguntas_frecuentes.html">Preguntas
+                Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <section class="pagina1">
+    <div class="pagina1__right">
+      <h1 class="pagina1__h1">Logística por y para <span> EMPRENDEDORES</span></h1>
+      <p class="pagina1__p">Te ofrecemos una plataforma para poder cotizar y realizar tus entregas de forma rápida,
+        segura y económica</p>
+    </div>
+    <div class="pagina1__btn"><a href="Paginas/contacto.html"><button class="actbtn">Comencemos</button></a></div>
+  </section>
+
+  <article class="container-fluid nuestroServicio">
+    <h2 class="h2 text-center">Nuestro Servicio</h2>
+    <br>
+    <h4 class="h4 nuestroServicio__h4">Son solo 3 simples pasos!</h4>
+
+    <div class="row justify-content-around ">
+
+      <div class="card card bg-secondary" style="width: 25rem;">
+        <img src="recursos/registro.jpg" class="card-img-top img-thumbnail" alt="paso uno">
+        <div class="card-body">
+          <h5 class="card-title">Te Registrás</h5>
+          <p class="card-text">Con tus datos de das de <span>alta como cliente</span> en nuestra plataforma, la cual te
+            dará la posibilidad de <span>cargar y hacer un seguimiento</span> de cada una de tus entregas.</p>
+          <a href="#" class="btn btn-primary">Solicitar Usuario</a>
+        </div>
+      </div>
+      <div class="card card bg-secondary" style="width: 25rem;">
+        <img src="recursos/carga.jpg" class="card-img-top img-thumbnail" alt="paso dos">
+        <div class="card-body">
+          <h5 class="card-title">Cargás las entregas</h5>
+          <p class="card-text">Solo necesitamos los <span>datos de contacto de tu cliente y las características de la
+              carga.</span><br>El cotizador online te permitirá <span>cotizar y cobrar los envíos.</span></p>
+          <a href="#" class="btn btn-primary">Ver tutorial</a>
+        </div>
+      </div>
+      <div class="card card bg-secondary " style="width: 25rem;">
+        <img src="recursos/descanso.jpg" class="card-img-top img-thumbnail" alt="paso tres">
+        <div class="card-body">
+          <h5 h5 class="card-title">Te olvidás</h5>
+          <p class="card-text">Con el pedido cargado, <span>nosotros nos comunicamos con el cliente</span> y coordinamos
+            el retiro y la <entrega class="br"> La plataforma te permite visualizar el estado de cada entrega en
+              <span>tiempo real.</span></entrega>
+          </p>
+          <a href="#" class="btn btn-primary">Ver tutorial</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <p class="footer__textos">Copyright 2018 <br> Todos los derechos reservados</p>
+    <a class="footer__btn" href="Paginas/contacto.html"><button>Comencemos</button></a>
+    <div>
+      <p class="footer__textos">Estamos en contacto</p>
+      <a class="logos" href="https://www.instagram.com/logemp2.0/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="logos" href="https://api.whatsapp.com/send?phone=+5491166173189"><i
+          class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
