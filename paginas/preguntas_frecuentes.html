@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Preguntas Frecuentes</title>
@@ -17,7 +18,8 @@
 <body class="preguntasFrecuentes__body">
     <nav class="navbar navbar-secondary bg-secondary fixed-top">
         <div class=" row col-5 col-sm-4 col-md-3 col-lg-2">
-            <a href="../index.html"><img src="../recursos/logonaranja.png" class="img-fluid" alt="Logo"></a>
+            <a href="../index.html"><img src="../recursos/logonaranja.png" class="img-fluid" data-aos="zoom-in"
+                data-aos-duration="3000"alt="Logo"></a>
         </div>
         <a href="https://app.logemp.com/"><button tipe="button" class="btn btn-warning nav__btn">Ingresa a la
                 <strong>APP</strong>
@@ -66,8 +68,6 @@
     <article class="container-fluid preguntasFrecuentes">
 
         <h2 class="preguntasFrecuentes__titulo">Preguntas Frecuentes</h2>
-
-
 
         <h4>Alta en la plataforma y uso</h4>
         <div class="accordion" id="accordionExample">
@@ -319,7 +319,7 @@
                     <div class="accordion-body">
                         El mismo día de la entrega se realiza un contacto con el cliente para confirmar que pueda
                         recibirlo, si aún así no se efectiviza la entrega se coordina una segunda fecha, si esta también
-                        es fallida, el cliente deberá abonar el flete 
+                        es fallida, el cliente deberá abonar el flete
                     </div>
                 </div>
             </div>
@@ -361,7 +361,7 @@
 
     </article>
 
-    <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+    <span data-aos="fade-left" data-aos-delay="2500" data-aos-duration="1500" class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
 
     <footer class="footer">
         <p class="footer__textos">Copyright 2018 <br> Todos los derechos reservados</p>
@@ -374,11 +374,13 @@
         </div>
     </footer>
 
-
-
-
-
     <script src="../js/bootstrap.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

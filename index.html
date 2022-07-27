@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/estilos.css">
   <title>Logemp Inicio</title>
@@ -17,7 +18,7 @@
 <body>
   <nav class="navbar navbar-secondary bg-secondary fixed-top">
     <div class=" row col-5 col-sm-4 col-md-3 col-lg-2">
-      <a href="./index.html"><img src="./recursos/logonaranja.png" class="img-fluid" alt="Logo"></a>
+      <a href="./index.html"><img src="./recursos/logonaranja.png" class="img-fluid" data-aos="zoom-in" data-aos-duration="3000" alt="Logo"></a>
     </div>
     <a href="https://app.logemp.com/"><button tipe="button" class="btn btn-warning nav__btn">Ingresa a la
         <strong>APP</strong>
@@ -61,12 +62,12 @@
   </nav>
 
   <section class="pagina1">
-    <div class="pagina1__right">
-      <h1 class="pagina1__h1">Logística por y para <span> EMPRENDEDORES</span></h1>
-      <p class="pagina1__p">Te ofrecemos una plataforma para poder cotizar y realizar tus entregas de forma rápida,
+    <div class="pagina1__right" data-aos="zoom-in-right" data-aos-duration="1000">
+      <h1 class="pagina1__h1" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000" >Logística por y para <span> EMPRENDEDORES</span></h1>
+      <p class="pagina1__p " data-aos="zoom-in-up" data-aos-delay="2000">Te ofrecemos una plataforma para poder cotizar y realizar tus entregas de forma rápida,
         segura y económica</p>
     </div>
-    <div class="pagina1__btn"><a href="Paginas/contacto.html"><button class="actbtn">Comencemos</button></a></div>
+    <div class="pagina1__btn"><a href="Paginas/contacto.html"><button class="actbtn" data-aos="fade-left" data-aos-delay="2500" data-aos-duration="1500" >Comencemos</button></a></div>
   </section>
 
   <article class="container-fluid nuestroServicio">
@@ -76,7 +77,7 @@
 
     <div class="row justify-content-around ">
 
-      <div class="card card bg-secondary" style="width: 25rem;">
+      <div data-aos="flip-up" data-aos-duration="1500" class="card card bg-secondary" style="width: 25rem;">
         <img src="recursos/registro.jpg" class="card-img-top img-thumbnail" alt="paso uno">
         <div class="card-body">
           <h5 class="card-title">Te Registrás</h5>
@@ -85,7 +86,7 @@
           <a href="#" class="btn btn-primary">Solicitar Usuario</a>
         </div>
       </div>
-      <div class="card card bg-secondary" style="width: 25rem;">
+      <div data-aos="flip-up" data-aos-duration="2000" class="card card bg-secondary" style="width: 25rem;">
         <img src="recursos/carga.jpg" class="card-img-top img-thumbnail" alt="paso dos">
         <div class="card-body">
           <h5 class="card-title">Cargás las entregas</h5>
@@ -94,7 +95,7 @@
           <a href="#" class="btn btn-primary">Ver tutorial</a>
         </div>
       </div>
-      <div class="card card bg-secondary " style="width: 25rem;">
+      <div data-aos="flip-up" data-aos-duration="2500" class="card card bg-secondary " style="width: 25rem;">
         <img src="recursos/descanso.jpg" class="card-img-top img-thumbnail" alt="paso tres">
         <div class="card-body">
           <h5 h5 class="card-title">Te olvidás</h5>
@@ -120,9 +121,15 @@
     </div>
   </footer>
 
-  <span class="logoWTPflotante"><i class="fa-brands fa-whatsapp"></i></span>
+  <span class="logoWTPflotante "><i class="fa-brands fa-whatsapp"></i></span>
 
   <script src="js/bootstrap.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
