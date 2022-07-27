@@ -44,7 +44,7 @@
         background-size: cover;
         background-position: right;
         color: #fff;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../Recursos/imagenfondo.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../recursos/imagenfondo.jpg);
         display: flex;
         flex-direction: row;
         align-items: center;
